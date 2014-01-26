@@ -1,0 +1,138 @@
+
+  @import 'compass/reset';
+  @import 'compass/css3/inline-block';
+  @import 'compass/css3/border-radius';
+  @import 'compass/css3/box-shadow';
+  @import 'compass/css3/images';
+  @import "compass/css3/background-size";
+  @import 'compass/css3/text-shadow';
+
+  $max-width: 640px;
+
+  body {
+    width:100%;
+    font-family: 'Helvetica', Arial;
+    @include background(url(../img/bkg.jpg) no-repeat center center fixed);
+    @include background-size(cover);
+  }
+
+  section {
+    width:372px;
+    margin:0 auto;
+
+    @media screen and (max-width: $max-width) {
+      width:100%;
+    }
+  }
+
+  header {
+    padding-top:45px;
+    text-align: center;
+    
+    h1 {
+      font-weight:bold;
+      font-size:2.5em;
+      color:white;
+      text-shadow: 1px 0px 20px rgba(0,0,0,0.2);
+      line-height:1.2em;
+
+      @media screen and (max-width: $max-width) {
+        font-size:1.8em;
+      }
+    }
+  }
+
+  div.content {
+    position:relative;
+    margin:40px 0 0;
+
+    .button {
+      @include inline-block();
+      width:77px;
+      line-height:77px;
+      text-align:center;
+      @include border-radius(372px);
+      @include box-shadow(rgba(0,0,0,0.2) 0 0 4px 4px);
+      border:8px solid white;
+      @include background(linear-gradient(#333333,#000000) 0 0);
+      color:white;
+      font-size:1.5em;
+
+      &:active {
+        @include background(linear-gradient(#000,#333) 0 0);
+      }
+
+      // Types
+      &.forward,
+      &.shuffle {
+        position:absolute;
+        top:140px;
+      }
+
+      &.shuffle { left:-125px }
+      &.forward { right:-125px }
+
+      &.main {
+        width:353px;
+        line-height:353px;
+        font-size:5em;
+        @include background(url('../img/luisico.jpg') no-repeat -200px -115px);
+
+        &:active {
+          @include background(url('../img/luisico.jpg') no-repeat -200px -115px);
+        }
+      }
+    }
+
+    @media screen and (max-width: $max-width) {
+      text-align:center;
+
+      .button.main {
+        margin:0 auto;
+        display:block;
+        width:200px;
+        line-height:200px;
+        background-position: -70px -50px;
+        background-size: 300px 300px;
+        
+        &:active {
+          background-position: -70px -50px;
+          background-size: 300px 300px;
+        }
+      }
+
+      .button.forward,
+      .button.shuffle {
+        position:relative;
+        top:auto; left:auto; right:auto;
+        margin-top:10px;
+      }
+      .button.shuffle {
+        margin-right:10px;
+      }
+    }
+  }
+
+  footer {
+    margin:40px 0 0;
+    padding-bottom:40px;
+
+    p {
+      display:block;
+      font-family:'Georgia',Arial;
+      text-align:center;
+      text-shadow: 1px 0px 20px rgba(0,0,0,0.2);
+
+      &.es {
+        font-size:2.438em;
+        color:#FFFFFF;
+        line-height:1.3em;
+      }
+
+      &.en {
+        margin:20px 0 0;
+        font-size:1.438em;
+        color:rgba(#EDEDED,0.6);
+      }
+    }
+  }

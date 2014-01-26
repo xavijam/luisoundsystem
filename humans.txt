@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Javier Álvarez -- UI Developer -- @xavijam
+
+# THANKS
+
+    Diego Cano -- Designer -- @DamagedGoods
+    Fernando Espinosa -- Developer -- @ferdev
+
+    All @vizzuality and @simbioticos team members
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, Backbone
+    Normalize.css, jQuery, Modernizr
