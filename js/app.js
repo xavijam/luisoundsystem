@@ -154,6 +154,7 @@
           if (state === "ended" && window.chrome) {
             this.audio.load();
           }
+
           $(this.audio).trigger("play");
         }
         if (state === "playing") {
@@ -181,8 +182,10 @@
 
         var item = this.collection.at(pos);
         var track = item.get('file');
-        this.router.navigate('#/' + track, { trigger: false });
+      
         this.model.set('file', track);
+        this.model.set('state', 'paused'); // Trick for chrome bug
+        this.router.navigate('#/' + track, { trigger: false });
       },
 
       shuffle: function(e) {
@@ -193,6 +196,7 @@
         
         // If so, set new src!
         this.model.set('file', track);
+        this.model.set('state', 'paused'); // Trick for chrome bug
         this.router.navigate('#/' + track, { trigger: false });
       }
 
