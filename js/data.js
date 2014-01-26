@@ -57,7 +57,7 @@ var tracks = [
   {
     file: 'joder_como_corre_ese_maricon',
     es: 'Joder cómo corre ese maricón',
-    en: 'Fuck, how fast he runs'
+    en: 'Fuck, how fast that gay runs'
   },
   {
     file: 'no',
