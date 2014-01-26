@@ -37,17 +37,17 @@ var tracks = [
   {
     file: 'hala',
     es: 'Hala!',
-    en: 'Hala!'
+    en: ''
   },
   {
     file: 'hala_venga',
     es: 'Hala venga!',
-    en: 'Ok, let\'s go'
+    en: 'Oh come on!'
   },
   {
     file: 'halaaaa',
     es: 'Halaaaa!',
-    en: 'Ooook!'
+    en: ''
   },
   {
     file: 'hijo_de_tu_madre',
@@ -212,7 +212,7 @@ var tracks = [
   {
     file: 'vamos',
     es: 'Vamos!',
-    en: 'Let\'s go'
+    en: 'Let\'s go!'
   },
   {
     file: 'wooaaaayyy',
@@ -227,6 +227,6 @@ var tracks = [
   {
     file: 'y_encima_te_la_llevas_cabron',
     es: 'Y encima te la llevas cabrón!',
-    en: 'And also you have the ball bastard'
+    en: 'And also you have the ball bastard!'
   }
 ]
